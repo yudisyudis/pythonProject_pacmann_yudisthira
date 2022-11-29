@@ -4,12 +4,11 @@ from random import randint
 class Transaksi:
     id = randint(10000, 99999)
     belanjaan = {}
+    
     nama = str
     jumlah = str
     harga = int
-    total = []
-    gabung_harga = []
-    gabung_jumlah = []
+    
     total_harga = int(0)
     total_belanjaan = int(0)
 
@@ -26,13 +25,15 @@ class Transaksi:
         nama = input("mau beli apa: ")
         jumlah = int(input("masukkan jumlah pembelian: "))
         harga = int(input("masukkan harga per itemnya: "))
+        
         self.nama = nama
         self.jumlah = jumlah
         self.harga = harga
+        
         self.belanjaan[self.nama] = [self.jumlah, self.harga]
-        self.gabung_harga.append(self.harga)
-        self.gabung_jumlah.append(self.jumlah)
+        
         print(f'belanjaan anda {self.belanjaan}')
+        
         cek = input("apakah data sudah final? (Y/N): ")
         if cek.lower() == "y":
             return self.check_item()
