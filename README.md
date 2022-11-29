@@ -248,3 +248,6 @@ Klien memberikan sejumlah test case yang mesti diujicobakan di aplikasi Super Ca
 5. Test Case 4, menghitung total harga belanjaan:
 
 ![image](https://user-images.githubusercontent.com/91902011/204541607-ffa0771a-6be7-496c-970d-8aa59a5457d2.png)
+
+## Video explanation
+https://youtu.be/6sAVOJnLe4I
