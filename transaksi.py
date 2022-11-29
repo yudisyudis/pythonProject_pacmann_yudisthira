@@ -12,8 +12,7 @@ class Transaksi:
     gabung_jumlah = []
     total_harga = int(0)
     total_belanjaan = int(0)
-    # def __init__(self, id = randint(10000, 99999)):
-    #     self.id = id
+
     def __init__(self):
         print(f"Selamat Datang Customer {self.id} di Toko Online")
         wel = input("siap memulai belanja? (Y/N) ")
@@ -23,9 +22,6 @@ class Transaksi:
             pass
 
 
-
-
-
     def add_item(self):
         nama = input("mau beli apa: ")
         jumlah = int(input("masukkan jumlah pembelian: "))
@@ -33,7 +29,6 @@ class Transaksi:
         self.nama = nama
         self.jumlah = jumlah
         self.harga = harga
-        # self.total = self.jumlah * self.harga
         self.belanjaan[self.nama] = [self.jumlah, self.harga]
         self.gabung_harga.append(self.harga)
         self.gabung_jumlah.append(self.jumlah)
@@ -42,7 +37,7 @@ class Transaksi:
         if cek.lower() == "y":
             return self.check_item()
         elif cek.lower() == "n":
-            cek2 = input(f'tulis 1 untuk nambah barang, 2 untuk rubah barang, 3 untuk hapus barang: ')
+            cek2 = input(f'tulis 1 untuk nambah barang, 2 untuk merubah barang, 3 untuk hapus barang: ')
             if cek2.lower() == '1':
                 return self.add_item()
             elif cek2.lower() == '2':
@@ -51,9 +46,13 @@ class Transaksi:
                 return self.delete_item()
             else:
                 print("keyword salah")
+                return self.add_item()
+        else:
+            print("keyword salah")
+            return self.add_item()
 
     def update_item(self):
-        cek = input(f'tulis 1 untuk ubah barang, 2 untuk ubah jumlah, 3 untuk ubah harga: ')
+        cek = input(f'tulis 1 untuk ubah nama, 2 untuk ubah jumlah, 3 untuk ubah harga: ')
         if cek.lower() == "1":
             nama2 = input("masukkan barang yang mau diganti: ")
             nama3 = input("masukkan barang pengganti: ")
@@ -81,7 +80,7 @@ class Transaksi:
                     continue
         elif cek.lower() == "2":
             nama = input("masukkan barang yang jumlahnya mau diganti: ")
-            jumlah2 = input("masukkan jumlah baru: ")
+            jumlah2 = int(input("masukkan jumlah baru: "))
             self.belanjaan[nama] = [jumlah2, self.harga]
             print(f'daftar belanja baru anda {self.belanjaan}')
             cek4 = input("apakah data sudah final? (Y/N): ")
@@ -99,7 +98,7 @@ class Transaksi:
                     print("keyword salah")
         elif cek.lower() == "3":
             nama = input("masukkan barang yang harganya mau diganti: ")
-            harga2 = input("masukkan harga baru: ")
+            harga2 = int(input("masukkan harga baru: "))
             self.belanjaan[nama] = [self.jumlah, harga2]
             print(f'daftar belanja baru anda {self.belanjaan}')
             cek6 = input("apakah data sudah final? (Y/N): ")
@@ -181,7 +180,4 @@ class Transaksi:
 
 
 
-transaksi_1 = Transaksi()
-# transaksi_2 = Transaksi()
-print(transaksi_1)
-# print(transaksi_2.add_item())
+
