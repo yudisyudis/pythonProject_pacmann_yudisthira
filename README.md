@@ -240,3 +240,11 @@ Klien memberikan sejumlah test case yang mesti diujicobakan di aplikasi Super Ca
 3. Test Case 2, customer menghapus pasta gigi dari daftar belanjaan:
 
 ![image](https://user-images.githubusercontent.com/91902011/204497570-8a2100ce-4491-4efc-bcee-36eedea2ce7b.png)
+
+4. Test Case 3, customer menghapus seluruh daftar belanjaan:
+
+![image](https://user-images.githubusercontent.com/91902011/204540054-7cccc52a-824f-4af7-b67e-99207107964a.png)
+
+5. Test Case 4, menghitung total harga belanjaan:
+
+![image](https://user-images.githubusercontent.com/91902011/204541607-ffa0771a-6be7-496c-970d-8aa59a5457d2.png)
