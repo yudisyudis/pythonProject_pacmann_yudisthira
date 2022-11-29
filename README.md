@@ -224,3 +224,19 @@ Penjelasan:
  ```
  Penjelasan:
  - Method reset berisikan built-in function clear() yang berguna untuk menghapus seluruh isi dictionary dalam hal ini dictionary belanjaan
+
+## Test Case
+
+Klien memberikan sejumlah test case yang mesti diujicobakan di aplikasi Super Cashier yang tengah dikembangkan sebelum digunakan langsung oleh klien, pada bagian ini akan diberikan test case dan hasil yang diperoleh dari aplikasi Super Cashier
+
+1. Tampilan awal aplikasi setelah dilakukan instanstiasi objek Transaksi:
+
+![image](https://user-images.githubusercontent.com/91902011/204495851-9c7336ea-bdfd-4f8a-b43f-ef69a9076262.png)
+
+2. Test Case 1, customer menambahkan dua barang belanjaan yaitu 2 porsi ayam goreng dengan harga 20000 per porsi, dan 3 buah pasta gigi dengan harga 15000 per item:
+
+![image](https://user-images.githubusercontent.com/91902011/204497159-daa3291f-3460-44e8-9777-3bdf4077b0bb.png)
+
+3. Test Case 2, customer menghapus pasta gigi dari daftar belanjaan:
+
+![image](https://user-images.githubusercontent.com/91902011/204497570-8a2100ce-4491-4efc-bcee-36eedea2ce7b.png)
